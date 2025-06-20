@@ -20,6 +20,7 @@ def selection_sort(arr):
         for j in range(i+1, len(arr)):
             if arr[j] < arr[min_index]:
                 min_index = j
+        print("Iteration:", arr)
         placeholder = arr[i]
         arr[i] = arr[min_index]
         arr[min_index] = placeholder
